@@ -76,11 +76,16 @@ WSGI_APPLICATION = 'crud.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+# postgres://plhykfxqavjezh:21d7d227bf6c36464a0917f082b8b81a683bbfa903f1aa82012ccc2142b83669@ec2-44-196-223-128.compute-1.amazonaws.com:5432/dfbf28b3jvjufa
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfbf28b3jvjufa',
+        'USER': 'plhykfxqavjezh',
+        'PASSWORD': '21d7d227bf6c36464a0917f082b8b81a683bbfa903f1aa82012ccc2142b83669',
+        'HOST': 'ec2-44-196-223-128.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
 
